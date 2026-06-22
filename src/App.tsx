@@ -6,11 +6,11 @@ function App() {
       <img
         className="logo"
         src="/cheeky_logo_color.jpg"
-        alt="Cheeky Korus logo"
+        alt="Cheeky Kórus logo"
       />
 
       <section className="contact-card" aria-label="Kapcsolat">
-        <h1>Cheeky Korus</h1>
+        <h1>Cheeky Kórus</h1>
         <a href="mailto:info@cheeky-korus.hu">info@cheeky-korus.hu</a>
         <a
           href="https://www.facebook.com/profile.php?id=100057487238005"
