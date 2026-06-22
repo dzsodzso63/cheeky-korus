@@ -1,0 +1,96 @@
+:root {
+  --bg-color: #f6efe4;
+  --surface: rgba(255, 250, 241, 0.72);
+  --text-color: #5c4a43;
+  --heading-color: #241612;
+  --border: rgba(89, 52, 44, 0.14);
+  --accent-color: #8e2f3c;
+  --shadow: 0 22px 60px rgba(91, 53, 45, 0.14);
+  --display-font: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+  --body-font: 'Avenir Next', 'Segoe UI', sans-serif;
+
+  color: var(--text-color);
+  background: var(--bg-color);
+  font-family: var(--body-font);
+  font-size: 18px;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(196, 128, 71, 0.18), transparent 32%),
+    linear-gradient(180deg, #fbf5ea 0%, #f4ecdf 45%, #efe3d3 100%);
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 85%);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: var(--heading-color);
+  font-family: var(--display-font);
+  font-weight: 600;
+  line-height: 0.96;
+}
+
+h1 {
+  font-size: clamp(3.5rem, 9vw, 7rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 3rem);
+}
+
+p {
+  max-width: 66ch;
+}
+
+@media (max-width: 860px) {
+  :root {
+    font-size: 16px;
+  }
+}
