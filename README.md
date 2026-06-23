@@ -1,6 +1,8 @@
 # Cheeky Korus
 
-Vite + React + TypeScript alapu SPA scaffold a Cheeky Korus honlapjahoz.
+Vite + React + TypeScript alapu SPA a Cheeky Korus honlapjahoz:
+
+https://cheeky-korus.hu/
 
 ## Stack
 
@@ -36,8 +38,3 @@ A projekt statikus Vite appkent deployolhato Vercelen.
 - Output directory: `dist`
 - A `vercel.json` rewrite gondoskodik rola, hogy az SPA route-ok is az `index.html`-re essen vissza.
 
-## Mit erdemes kovetkezokent cserelni
-
-- Valodi korusleiras, tagfelveteli szoveg es kapcsolat
-- Repertoar, esemenyek, probaidopontok
-- Sajatos kepek, logok, favicon es kozossegi linkek
