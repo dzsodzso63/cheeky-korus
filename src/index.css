@@ -24,49 +24,31 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background: #121212;
+  position: relative;
+  overflow-x: hidden;
 }
 
-a {
-  color: inherit;
+body::before {
+  content: "";
+  position: fixed;
+  inset: -10%;
+  z-index: -1;
+  background-image: url("background_image.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  filter: blur(30px);
+  animation: bgMove 40s ease-in-out infinite alternate;
+  transform: scale(1.1);
 }
 
-button,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
-
-#root {
-  min-height: 100vh;
-}
-
-h1,
-h2,
-p {
-  margin: 0;
-}
-
-h1,
-h2 {
-  color: #fff;
-  font-family: 'Avenir Next', 'Segoe UI', sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-h1 {
-  font-size: clamp(2rem, 8vw, 3.2rem);
-}
-
-h2 {
-  font-size: clamp(1.3rem, 4vw, 2.2rem);
-}
-
-p {
-  max-width: 66ch;
-}
-
-@media (max-width: 860px) {
-  :root {
-    font-size: 16px;
+@keyframes bgMove {
+  0% {
+    transform: scale(1.1) translate(0%, 0%);
   }
-}
+  25% {
+    transform: scale(1.15) translate(-2%, 1%);
+  }
+  50% {
+    transform: scale(1.12) translate(2%, -1.5%);
+  }
