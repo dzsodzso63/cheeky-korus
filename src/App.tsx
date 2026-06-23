@@ -5,7 +5,7 @@ function App() {
     <main className="page-shell">
       <img
         className="logo"
-        src="/cheeky_logo_color.jpg"
+        src="/cheeky_logo_color.png"
         alt="Cheeky Kórus logo"
       />
 
