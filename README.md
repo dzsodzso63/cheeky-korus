@@ -10,7 +10,6 @@ https://cheeky-korus.hu/
 - TypeScript
 - Vite 8
 - ESLint
-- Vercelre kesz SPA rewrite
 
 ## Fejlesztes
 
@@ -32,7 +31,7 @@ A production build a `dist/` mappaba kerul.
 
 ## Vercel deploy
 
-A projekt statikus Vite appkent deployolhato Vercelen.
+A projekt statikus Vite appkent deployolodik automatikusan Vercelen, ha a main branch valtozik
 
 - Build command: `npm run build`
 - Output directory: `dist`
