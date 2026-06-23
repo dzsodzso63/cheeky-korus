@@ -52,3 +52,57 @@ body::before {
   50% {
     transform: scale(1.12) translate(2%, -1.5%);
   }
+  75% {
+    transform: scale(1.16) translate(-1%, 2%);
+  }
+  100% {
+    transform: scale(1.1) translate(1%, -1%);
+  }
+}
+
+a {
+  color: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#root {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-family: 'Avenir Next', 'Segoe UI', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: clamp(2rem, 8vw, 3.2rem);
+}
+
+h2 {
+  font-size: clamp(1.3rem, 4vw, 2.2rem);
+}
+
+p {
+  max-width: 66ch;
+}
+
+@media (max-width: 860px) {
+  :root {
+    font-size: 16px;
+  }
+}
