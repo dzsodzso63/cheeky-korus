@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import './App.css'
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           Instagram
         </a>
       </section>
+      <Analytics />
     </main>
   )
 }
