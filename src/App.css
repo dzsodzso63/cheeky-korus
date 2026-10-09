@@ -38,3 +38,31 @@
   color: #ffffff;
   opacity: 0.82;
 }
+
+.spotify-widget {
+  width: min(560px, 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.spotify-widget iframe {
+  width: 100%;
+  max-width: 560px;
+  border: 0;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .spotify-widget {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    width: 380px;
+    z-index: 10;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45));
+  }
+
+  .spotify-widget iframe {
+    max-width: 100%;
+  }
+}

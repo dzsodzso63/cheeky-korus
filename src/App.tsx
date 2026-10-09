@@ -35,6 +35,21 @@ function App() {
         </a>
         <a href="mailto:info@cheeky-korus.hu">info@cheeky-korus.hu</a>
       </section>
+
+      <aside className="spotify-widget" aria-label="Spotify lejátszó">
+        <iframe
+          data-testid="embed-iframe"
+          style={{ borderRadius: "12px" }}
+          src="https://open.spotify.com/embed/album/6CMs9TbwTFgYVlsUYGNQG9?utm_source=generator&theme=0&si=8d2214a80ace4520"
+          width="100%"
+          height="152"
+          frameBorder="0"
+          allowFullScreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+          title="Spotify - Cheeky Kórus album"
+        />
+      </aside>
       <Analytics />
       <SpeedInsights />
     </main>
